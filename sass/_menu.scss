@@ -1,0 +1,87 @@
+  .menu-box {
+    text-transform: uppercase;
+    z-index: 9999;
+    position: fixed;
+    top: 20%;
+    right: 10%;
+    display: none;
+
+    &>li {
+      color: red;
+      font-weight: 900;
+      font-size: 1.8em;
+      padding: 15px 60px 15px 15px;
+
+      &.side {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+      }
+    }
+  }
+
+.menu {
+  position: fixed;
+  top: 28px;
+  right: 15px;
+}
+
+.button-close {
+  cursor: pointer;
+  display: block;
+  padding: 0 8px 8px 8px;
+
+  .icon {
+    background-image: url('../images/sprite.png');
+    background-position: 0 -620px;
+    background-repeat: no-repeat;
+    height: 27px;
+    width: 27px;
+    vertical-align: middle;
+    display: inline-block;
+  }
+}
+
+.menu .button-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+.button {
+  position: relative;
+  padding: 8px;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+
+  &>.line {
+    position: absolute;
+    left: 8px;
+    display: block;
+    width: 27px;
+    height: 3px;
+    background: #000;
+  }
+
+  &>.line:nth-child(1) {
+    top: 0px;
+  }
+
+  &>.line:nth-child(2) {
+    top: 10px;
+  }
+
+  &>.line:nth-child(3) {
+    top: 20px;
+  }
+}
+
+.menu .button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

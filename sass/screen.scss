@@ -1,0 +1,70 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+@import "compass/reset";
+@import "mixins";
+@import "menu";
+
+
+.container {
+  font-family: "anonymous-pro";
+  margin-top: 50px;
+  padding: 30px 15px 30px 15px;
+  @include box-sizing;
+  @include clearfix;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    padding: 120px 0 0 0;
+
+    &.rotate-counter {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+          margin-bottom: 60px;
+    }
+
+    &.rotate-clock {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+    }
+  }
+
+  .months {
+    @include box-sizing;
+    text-align: left;
+    float: left;
+    width: 10%;
+
+    li {
+      font-size: 1.2em;
+      text-transform: uppercase;
+      padding: 0 0 20px 0;
+    }
+  }
+
+  .photoz {
+    @include box-sizing;
+    float: left;
+    width: 90%;
+    padding-left: 30px;
+
+    &>img {
+      width: 100%;
+    }
+  }
+}

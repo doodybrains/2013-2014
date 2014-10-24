@@ -1,0 +1,254 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*
+  Colors
+*/
+/*
+  Base sizing
+*/
+/* 16 is a sensible base. Leave this value. */
+/*
+  Defaults
+*/
+/*
+  Mixins
+*/
+/* line 1, ../sass/_menu.scss */
+.menu-box {
+  text-transform: uppercase;
+  z-index: 9999;
+  position: fixed;
+  top: 20%;
+  right: 10%;
+  display: none;
+}
+/* line 9, ../sass/_menu.scss */
+.menu-box > li {
+  color: red;
+  font-weight: 900;
+  font-size: 1.8em;
+  padding: 15px 60px 15px 15px;
+}
+/* line 15, ../sass/_menu.scss */
+.menu-box > li.side {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+
+/* line 25, ../sass/_menu.scss */
+.menu {
+  position: fixed;
+  top: 28px;
+  right: 15px;
+}
+
+/* line 31, ../sass/_menu.scss */
+.button-close {
+  cursor: pointer;
+  display: block;
+  padding: 0 8px 8px 8px;
+}
+/* line 36, ../sass/_menu.scss */
+.button-close .icon {
+  background-image: url("../images/sprite.png");
+  background-position: 0 -620px;
+  background-repeat: no-repeat;
+  height: 27px;
+  width: 27px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+/* line 47, ../sass/_menu.scss */
+.menu .button-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+/* line 54, ../sass/_menu.scss */
+.button {
+  position: relative;
+  padding: 8px;
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+}
+/* line 61, ../sass/_menu.scss */
+.button > .line {
+  position: absolute;
+  left: 8px;
+  display: block;
+  width: 27px;
+  height: 3px;
+  background: #000;
+}
+/* line 70, ../sass/_menu.scss */
+.button > .line:nth-child(1) {
+  top: 0px;
+}
+/* line 74, ../sass/_menu.scss */
+.button > .line:nth-child(2) {
+  top: 10px;
+}
+/* line 78, ../sass/_menu.scss */
+.button > .line:nth-child(3) {
+  top: 20px;
+}
+
+/* line 83, ../sass/_menu.scss */
+.menu .button {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* line 12, ../sass/screen.scss */
+.container {
+  font-family: "anonymous-pro";
+  margin-top: 50px;
+  padding: 30px 15px 30px 15px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 78, ../sass/_mixins.scss */
+.container:before, .container:after {
+  content: "";
+  display: table;
+}
+/* line 83, ../sass/_mixins.scss */
+.container:after {
+  clear: both;
+}
+/* line 84, ../sass/_mixins.scss */
+.container {
+  *zoom: 1;
+}
+/* line 19, ../sass/screen.scss */
+.container a {
+  color: inherit;
+  text-decoration: none;
+}
+/* line 24, ../sass/screen.scss */
+.container h1 {
+  font-size: 2em;
+  text-align: center;
+  padding: 120px 0 0 0;
+}
+/* line 29, ../sass/screen.scss */
+.container h1.rotate-counter {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  margin-bottom: 60px;
+}
+/* line 38, ../sass/screen.scss */
+.container h1.rotate-clock {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+/* line 47, ../sass/screen.scss */
+.container .months {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: left;
+  float: left;
+  width: 10%;
+}
+/* line 53, ../sass/screen.scss */
+.container .months li {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  padding: 0 0 20px 0;
+}
+/* line 60, ../sass/screen.scss */
+.container .photoz {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  width: 90%;
+  padding-left: 30px;
+}
+/* line 66, ../sass/screen.scss */
+.container .photoz > img {
+  width: 100%;
+}
